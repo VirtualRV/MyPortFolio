@@ -26,7 +26,7 @@ const PortfolioData = {
   stats: [
     { number: "7.5+", label: "Years of Experience" },
     { number: "4+", label: "Global InsurTech Clients (AXA, CHUBB...)" },
-    { number: "5,000+", label: "Concurrent Pipeline Throughput (RPS)" }
+    { number: "100+", label: "Concurrent Pipeline Throughput" }
   ],
 
   socials: [

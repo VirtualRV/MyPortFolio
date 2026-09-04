@@ -109,10 +109,26 @@ function initMenuDropdown() {
   });
 
   menuDropdown.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
+    link.addEventListener('click', (e) => {
       menuDropdown.classList.remove('active');
       menuBtn.classList.remove('open');
       menuBtn.setAttribute('aria-expanded', 'false');
+
+      const href = link.getAttribute('href');
+      if (href && href.includes('#')) {
+        const hash = href.substring(href.indexOf('#'));
+        const isHomePage = window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('/') || window.location.pathname === '';
+        if (isHomePage) {
+          const targetEl = document.querySelector(hash);
+          if (targetEl) {
+            e.preventDefault();
+            targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            if (history.pushState) {
+              history.pushState(null, '', hash);
+            }
+          }
+        }
+      }
     });
   });
 }
