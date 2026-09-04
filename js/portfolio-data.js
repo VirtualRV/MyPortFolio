@@ -17,7 +17,7 @@ const PortfolioData = {
     linkedinHandle: "linkedin.com/in/virtualvr",
     github: "https://github.com/VirtualRV",
     githubHandle: "github.com/VirtualRV",
-    resumeUrl: "#contact",
+    resumeUrl: "/assets/Vikas_Rai_Resume.pdf",
     heroImage: "assets/images/hero-developer.jpg",
     heroBio: "Senior Full Stack Developer with 7.5 years of experience architecting and scaling enterprise-grade web platforms across Commercial Insurance, FinTech E-Commerce, Real-Time Tracking, and SaaS domains.",
     aboutBio: "Deep domain mastery building high-throughput Underwriting Benchmarking engines, Subscribe API integrations, and Exact Underwriting workflow engines for global commercial insurance leaders including AXA, CHUBB, MultiStrat, and Canopius. Advanced expertise in System Design, Microservices, React, Angular, Blazor, Node.js, .NET 8, and Azure Cloud."
